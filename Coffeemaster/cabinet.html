@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="fonts/Open_Sans">
+    <link rel="stylesheet" href="fonts/PT_Sans">
+    <link rel="stylesheet" href="css/main.min.css">
+    <link href="fonts/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="fonts/fontawesome/css/brands.css" rel="stylesheet">
+    <link href="fonts/fontawesome/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet"  href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet"  href="css/slick.css">
+
+    <!--Useful meta tags-->
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Project</title>
+
+</head>
+<body id="cabinet">
+    <section id="cabinet_block_1">
+          <nav class="menu_adaptive">
+            <a href="home.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="menu.html">MENU</a>
+            <a href="gallery.html">GALLERY</a>
+            <a href="contact.html">CONTACT</a>
+    </nav>
+        <div class="top_header">
+            <div class="wrap">
+                <div class="logo">
+                    <p>Coffeemaster</p>
+                </div>
+                 <div class="header_burger">
+            <span></span>
+        </div>
+                <nav>
+                   <a href="home.html">HOME</a>
+                   <a href="about.html">ABOUT</a>
+                    <a href="menu.html">MENU</a>
+                   <a href="gallery.html">GALLERY</a>
+                    <a href="contact.html">CONTACT</a>
+                </nav>
+                <div class="header_icons">
+                    <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                    <a href="cabinet.html"><i class="fas fa-user-alt"></i></a>
+                </div>
+            </div>
+        </div>
+      <div class="cabinet_main">
+        <div class="wrap">
+          <h2>Login</h2>
+          <div class="login_form">
+            <input type="text" placeholder="Login">
+            <input type="password" placeholder="Password">
+            <input type="submit" value="Enter" class="wow bounce">
+            <input type="submit" value="Register">
+            <p>Sign up for a free account at our store. Registration is quick and easy. It allows you to be able to order from our shop. To start shopping click register.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+<!--Section 'Prefooter'-->
+
+
+
+<section class="prefooter">
+    <div class="wrap">
+        <div class="prefooter_box">
+        <div class="touch">
+            <h3>Get in touch</h3>
+            <p>+320 (43) 454-34-21</p>
+            <p>coffeemaster@gmail.com</p>
+        </div>
+        <div class="socials">
+            <h3>Socials</h3>
+            <img src="img/icon1.png" alt="1">
+            <img src="img/icon2.png" alt="2">
+            <img src="img/icon3.png" alt="3">
+            <img src="img/icon4.png" alt="4">
+        </div>
+        <div class="address">
+            <h3>Address</h3>
+            <p>New-York, Square</p>
+            <p>Mn-St: 9:00-20:00</p>
+        </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!--Section 'Footer'-->
+
+
+    <footer>
+        <div class="wrap">
+            <p>© 2018 Coffeemaster Shop.All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!--Button to top-->
+
+    <button id="btn_top">
+        <i class="fas fa-angle-up"></i>
+    </button>
+
+
+
+
+
+
+    <!--JS links-->
+
+    <script src="js/libs.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/control.js"></script>
+    <script>
+        new WOW().init();
+
+        // Initialize and add the map
+    </script>
+    <script>
+      function initMap() {
+  // The location of Uluru
+  var uluru = {lat:40.7074962, lng: -74.0132324};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 5, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+    </script>
+     <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmrqMWt1kWwq79eyQJwxQMNkamt2TE5C0&callback=initMap">
+    </script>
+</body>
+</html>
