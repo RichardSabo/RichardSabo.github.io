@@ -301,7 +301,7 @@ header .wrap {
   background: transparent; }
 
 #home_menu {
-  padding: 7.5vmax 7.8vw; }
+  padding: 7.5vmax 0; }
 
 .home_menu_title h2 {
   text-align: center; }
