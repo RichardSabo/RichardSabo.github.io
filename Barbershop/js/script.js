@@ -104,29 +104,6 @@ $(document).ready(function() {
         manualControls: ".gal-nav li"
     });
 
-    // HOME SHOP CAROUSEL
-    var owl = $("#home-shop-carousel");
-    owl.owlCarousel({
-        itemsCustom: [
-            [0, 1],
-            [450, 1],
-            [600, 1],
-            [700, 2],
-            [1000, 4]
-        ],
-        autoPlay: 4000,
-        slideSpeed: 1000,
-        navigation: false,
-        pagination: true
-    });
-
-    var owl = $("#home-slider2");
-    owl.owlCarousel({
-        autoPlay: 4000,
-        navigation: false,
-        singleItem: true,
-        transitionStyle: "fade"
-    });
 
     // TWITTERFEED
     $('#tweetcool').tweecool({
