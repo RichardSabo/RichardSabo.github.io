@@ -1,0 +1,366 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+p, h1, h2, h3, h4 {
+  font-weight: 100; }
+
+.top {
+  height: 40vh;
+  width: 100%;
+  background: url("../img/murad-hassan-1323063-unsplash.jpg") no-repeat center center/cover; }
+
+.budget__title {
+  text-align: center;
+  padding-top: 60px;
+  font-size: 20px;
+  color: #f6f6f6;
+  font-weight: 100; }
+
+.budget__value {
+  font-size: 40px;
+  font-weight: 200;
+  color: #fff;
+  text-align: center; }
+
+.budget__income {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 20px;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  padding: 10px 50px;
+  width: 350px;
+  height: 45px;
+  background: rgba(46, 208, 33, 0.9);
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-border-radius: 6px;
+          border-radius: 6px; }
+
+.budget__income--text {
+  font-size: 12px;
+  color: #323232;
+  text-transform: uppercase;
+  position: absolute;
+  left: 10%;
+  margin-top: 3px; }
+
+.budget__income--value {
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+  position: absolute;
+  right: 20%; }
+
+.budget__expenses {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin: 0 auto;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  padding: 10px 50px;
+  margin-top: 13px;
+  width: 350px;
+  height: 45px;
+  background: rgba(214, 17, 17, 0.95);
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-border-radius: 6px;
+          border-radius: 6px; }
+
+.budget__expenses--text {
+  font-size: 12px;
+  color: #323232;
+  text-transform: uppercase;
+  position: absolute;
+  left: 10%;
+  margin-top: 3px; }
+
+.budget__expenses--value {
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+  position: absolute;
+  right: 20%; }
+
+.budget__expenses--percentage {
+  font-size: 12px;
+  margin-top: 2px;
+  color: #fff;
+  text-transform: uppercase;
+  position: absolute;
+  right: 4%;
+  background: rgba(255, 255, 255, 0.17);
+  padding: 2px; }
+
+.bottom {
+  height: 10vh;
+  background: #ebebeb;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center; }
+
+.add__type {
+  width: 41px;
+  height: 40px;
+  border: 2px solid #ccc;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  padding: 5px;
+  font-size: 17px;
+  cursor: pointer; }
+
+.option {
+  display: inline-block;
+  margin-top: 2px;
+  position: relative; }
+
+.option::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  content: "\f338";
+  position: absolute;
+  right: 20%;
+  top: 20%;
+  z-index: 100;
+  pointer-events: none;
+  color: #9a9a9a; }
+
+.add__description {
+  width: 300px;
+  padding: 10px;
+  font-size: 12px;
+  color: #323232;
+  border: 2px solid #ccc;
+  -webkit-border-radius: 3px;
+          border-radius: 3px; }
+
+.add__value {
+  width: 150px;
+  padding: 10px;
+  font-size: 12px;
+  color: #323232;
+  border: 2px solid #ccc;
+  -webkit-border-radius: 3px;
+          border-radius: 3px; }
+
+.add__btn {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background: transparent;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  cursor: pointer;
+  margin-left: 15px;
+  outline: none; }
+
+.add__btn:focus {
+  outline: none; }
+
+.add__btn:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  content: "\f00c";
+  outline: none; }
+
+.add__btn:hover {
+  background: #1868b7;
+  color: #fff; }
+
+.container {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  padding: 50px 0;
+  width: 100%;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.income__title,
+.expenses__title {
+  text-align: left; }
+
+.income__title {
+  color: #2ed021; }
+
+.expenses__title {
+  color: #d61111; }
+
+.income,
+.expenses {
+  width: 50%;
+  padding: 20px; }
+
+.item {
+  width: 100%;
+  border-top: 2px solid rgba(204, 204, 204, 0.56);
+  padding: 15px;
+  height: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  overflow: hidden; }
+
+.item__description {
+  position: absolute;
+  left: 5%; }
+
+.item__value {
+  -webkit-transform: translateX(40px);
+      -ms-transform: translateX(40px);
+          transform: translateX(40px);
+  -webkit-transition: 0.2s ease;
+  -o-transition: 0.2s ease;
+  transition: 0.2s ease;
+  position: absolute;
+  right: 11%; }
+
+.item__delete {
+  -webkit-transform: translateX(100px);
+      -ms-transform: translateX(100px);
+          transform: translateX(100px);
+  -webkit-transition: 0.2s ease;
+  -o-transition: 0.2s ease;
+  transition: 0.2s ease;
+  position: absolute;
+  right: 1%; }
+
+.item__delete--btn:focus {
+  outline: none; }
+
+.item:hover .item__delete,
+.item:hover .item__value,
+.expenses .item:hover .item__percentage {
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0); }
+
+.item__delete--btn {
+  background: transparent;
+  border: 0;
+  color: #d61111;
+  cursor: pointer; }
+
+.expenses .item .item__value {
+  color: #d61111;
+  position: absolute;
+  right: 20%; }
+
+.expenses .item .item__percentage {
+  margin-left: 50px;
+  -webkit-transform: translateX(40px);
+      -ms-transform: translateX(40px);
+          transform: translateX(40px);
+  -webkit-transition: 0.2s ease;
+  -o-transition: 0.2s ease;
+  transition: 0.2s ease;
+  background: rgba(245, 58, 58, 0.22);
+  padding: 2px;
+  color: #d61111;
+  position: absolute;
+  right: 10%;
+  top: 15px; }
+
+.red {
+  color: #d61111 !important; }
+
+.red-focus:focus {
+  border: 1px solid #d61111 !important; }
+
+input, button, select {
+  outline: none;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease; }
+
+select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; }
+
+@media screen and (max-width: 420px) {
+  .top {
+    height: 350px; }
+  .budget__income, .budget__expenses {
+    width: 200px; }
+  .add__description {
+    width: 150px; }
+  .option {
+    position: absolute;
+    margin-top: 50px; }
+  .add__btn {
+    position: absolute;
+    left: 20%;
+    margin-top: 50px; }
+  .expenses .item .item__percentage {
+    display: none; }
+  .item {
+    height: 75px; } }
