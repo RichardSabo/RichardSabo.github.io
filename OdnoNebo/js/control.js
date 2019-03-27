@@ -12,6 +12,7 @@ function lazyload(){
 }
 
 
+
 function elementInViewport(el){
     var rect = el.getBoundingClientRect();
     return (
