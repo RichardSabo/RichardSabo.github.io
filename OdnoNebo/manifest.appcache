@@ -1,0 +1,19 @@
+CACHE MANIFEST
+#DATE 2019-03-27
+CACHE:
+css/libs.css
+css/libsEng.css
+js/libs.js
+img/section5/img1.jpg
+fonts/Geometria/Geometria-Heavy.woff
+fonts/Geometria/Geometria.woff
+fonts/Geometria/Geometria-Medium.woff
+fonts/Geometria/Geometria-Light.woff
+fonts/Geometria/Geometria-Bold.woff
+
+NETWORK:
+*
+
+FALLBACK:
+#static.html
+
