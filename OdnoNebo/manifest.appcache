@@ -1,12 +1,10 @@
 CACHE MANIFEST
 
 CACHE:
-/css/libs.css
-/js/libs.js
+css/libs.css
+js/libs.js
 
 NETWORK:
 *
 
-FALLBACK:
-#static.html
 
