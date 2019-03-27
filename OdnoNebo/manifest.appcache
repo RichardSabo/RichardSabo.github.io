@@ -1,10 +1,13 @@
 CACHE MANIFEST
-
+#DATE 2019-03-27
 CACHE:
 css/libs.css
+css/libsEng.css
 js/libs.js
 
 NETWORK:
 *
 
+FALLBACK:
+#static.html
 
