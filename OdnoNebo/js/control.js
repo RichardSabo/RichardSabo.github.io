@@ -859,38 +859,20 @@ $(function() {
 });
     
     
-  var x = 0, y = 0,
-      vx = 0, vy = 0,
-      ax = 0, ay = 0;
-  
-  var cloud1 = $('.s2_cloud_1');
+if (window.DeviceOrientationEvent) {
+    window.addEventListener("deviceorientation", function () {
+        tilt([event.beta, event.gamma]);
+    }, true);
+} else if (window.DeviceMotionEvent) {
+    $('.s2_cloud_1').addEventListener('devicemotion', function () {
+        tilt([event.acceleration.x * 2, event.acceleration.y * 2]);
+    }, true);
+} else {
+    $('.s2_cloud_1').addEventListener("MozOrientation", function () {
+        tilt([orientation.x * 50, orientation.y * 50]);
+    }, true);
+}
     
-    if(window.DeviceMotionEvent != undefined){
-        window.ondevicemotion = function(e){
-            cloud1 = event.acceleration.x * 2;
-        }
-//        setInterval(function(){
-//            var landscapeOrientation = window.innerWidth/window.innerHeight > 1;
-//            if(landscapeOrientation){
-//                vx = vx + ay;
-//                vy = vy + ax;
-//            } else {
-//                vy = vy - ay;
-//                vx = vx + ax;
-//            }
-//            vx = vx * 0.98;
-//            vy = vy * 0.98;
-//            y = parseInt(y + vy / 50);
-//            x = parseInt(x + vx / 50);
-//            boundingBoxCheck();
-//            
-//            cloud1.style.left = x + "px";
-//            cloud1.style.top = y + "px";
-//            
-//        }, 25);
-    }
-    
-
     
 //   // Bind an event to window.orientationchange that, when the device is turned,
 //// gets the orientation and displays it to on screen.
