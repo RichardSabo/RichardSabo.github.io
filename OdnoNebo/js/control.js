@@ -864,11 +864,11 @@ if (window.DeviceOrientationEvent) {
         tilt([event.beta, event.gamma]);
     }, true);
 } else if (window.DeviceMotionEvent) {
-    $('.s2_cloud_1').addEventListener('devicemotion', function () {
+    $('.s2_cloud_1').devicemotion(function () {
         tilt([event.acceleration.x * 2, event.acceleration.y * 2]);
     }, true);
 } else {
-    $('.s2_cloud_1').addEventListener("MozOrientation", function () {
+    $('.s2_cloud_1').MozOrientation(function () {
         tilt([orientation.x * 50, orientation.y * 50]);
     }, true);
 }
