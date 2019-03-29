@@ -861,8 +861,8 @@ $(function() {
    // Bind an event to window.orientationchange that, when the device is turned,
 // gets the orientation and displays it to on screen.
 $( window ).on( "orientationchange", function( event ) {
-  $('.s2_cloud_1').css('transform', 'translateX(30px)');
-  $('.s2_cloud_2').css('transform', 'translateX(-30px)');
+  $('.s2_cloud_1').css('transform', 'translateX(-30px)');
+  $('.s2_cloud_2').css('transform', 'translateX(30px)');
   $('.s2_cloud_3').css('transform', 'translateX(-30px)');
   $('.s2_cloud_4').css('transform', 'translateX(30px)');
   $('.s2_cloud_5').css('transform', 'translateX(-30px)');
