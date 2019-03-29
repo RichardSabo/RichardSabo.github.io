@@ -708,10 +708,12 @@ header {
 
 .s2_cloud_1 {
   position: absolute;
+     transition: 0.2s ease;
   top: 0; }
 
 .s2_cloud_2 {
   position: absolute;
+     transition: 0.2s ease;
   top: -50px;
   right: -10vw; }
 .s2_cloud_2 img{
@@ -720,12 +722,14 @@ header {
 .s2_cloud_3 {
   position: absolute;
   top: 400px;
+     transition: 0.2s ease;
   left: -140px; }
 
 .s2_cloud_5,
 .s2_cloud_6,
 .s2_cloud_8,
 .s2_cloud_7 {
+     transition: 0.2s ease;
   display: none; }
 
 .s2_cloud_3 img {
@@ -733,6 +737,7 @@ header {
 
 .s2_cloud_4 {
   position: absolute;
+     transition: 0.2s ease;
   top: 500px;
   right: -160px; }
 
