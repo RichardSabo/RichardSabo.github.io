@@ -860,14 +860,14 @@ $(function() {
     
     
      window.addEventListener('devicemotion', function(event) {
-   $('.s2_cloud_1').event.acceleration.x + ' m/s2');
-   $('.s2_cloud_2').event.acceleration.x + ' m/s2');
-   $('.s2_cloud_3').event.acceleration.x + ' m/s2');
-   $('.s2_cloud_4').event.acceleration.x + ' m/s2');
-   $('.s2_cloud_5').event.acceleration.x + ' m/s2');
-   $('.s2_cloud_6').event.acceleration.x + ' m/s2');
-   $('.s2_cloud_7').event.acceleration.x + ' m/s2');
-   $('.s2_cloud_8').event.acceleration.x + ' m/s2');
+   $('.s2_cloud_1').event.acceleration.x + ' m/s2';
+   $('.s2_cloud_2').event.acceleration.x + ' m/s2';
+   $('.s2_cloud_3').event.acceleration.x + ' m/s2';
+   $('.s2_cloud_4').event.acceleration.x + ' m/s2';
+   $('.s2_cloud_5').event.acceleration.x + ' m/s2';
+   $('.s2_cloud_6').event.acceleration.x + ' m/s2';
+   $('.s2_cloud_7').event.acceleration.x + ' m/s2';
+   $('.s2_cloud_7').event.acceleration.x + ' m/s2';
 });
 
     
