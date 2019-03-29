@@ -896,7 +896,7 @@ $('.s2_cloud_8').parallaxify();
         responsive: false,
 
         // enable or disable mouse or gyroscope data as input for the plugin
-        useMouseMove: true,
+        useMouseMove: false,
         useGyroscope: true,
 
         // use a Low Pass Filter to smooth sensor readings (1 = no filter)
@@ -913,7 +913,7 @@ $('.s2_cloud_8').parallaxify();
 
         // define the delta angle (0 < motionAngle < 90) 
         // that is used to render max parallax in this direction
-        motionAngleX: 80,
+        motionAngleX: 50,
         motionAngleY: 80,
 
         // enable of adjustment of base position (using a Low Pass Filter)
