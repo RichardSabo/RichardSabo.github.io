@@ -850,18 +850,19 @@ var ymap = function() {
     }
   );  
 }
-   $.parallaxify.positionProperty.rotate = {
-        setPosition: function($element, left, originalLeft, top, originalTop) {
-            $element.css('transform', 'rotateX(' + left + 'deg) rotateY(' + top + 'deg)');
-        }
-    };
-        
-    // using your own positioning function
-    $('.s2_cloud_1').parallaxify({
-        positionProperty: 'rotate'
-    });
+//   $.parallaxify.positionProperty.rotate = {
+//        setPosition: function($element, left, originalLeft, top, originalTop) {
+//            $element.css('transform', 'rotateX(' + left + 'deg) rotateY(' + top + 'deg)');
+//        }
+//    };
+//        
+//    // using your own positioning function
+//    $('.s2_cloud_1').parallaxify({
+//        positionProperty: 'rotate'
+//    });
 
-$('.s2_cloud_2').parallaxify();
+$('#cloud1').parallaxify();
+$('#cloud2').parallaxify();
 $('.s2_cloud_3').parallaxify();
 $('.s2_cloud_4').parallaxify();
 $('.s2_cloud_5').parallaxify();
