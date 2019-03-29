@@ -858,20 +858,32 @@ $(function() {
  
 });
     
-   // Bind an event to window.orientationchange that, when the device is turned,
-// gets the orientation and displays it to on screen.
-$( window ).on( "orientationchange", function( event ) {
-  $('.s2_cloud_1').toggleClass('transform0');
-  $('.s2_cloud_2').toggleClass('transform1');
-  $('.s2_cloud_3').toggleClass('transform0');
-  $('.s2_cloud_4').toggleClass('transform1');
-  $('.s2_cloud_5').toggleClass('transform0');
-  $('.s2_cloud_6').toggleClass('transform1');
-  $('.s2_cloud_7').toggleClass('transform0');
-  $('.s2_cloud_8').toggleClass('transform0');
-  
+    
+     window.addEventListener('devicemotion', function(event) {
+   $('.s2_cloud_1').event.acceleration.x + ' m/s2');
+   $('.s2_cloud_2').event.acceleration.x + ' m/s2');
+   $('.s2_cloud_3').event.acceleration.x + ' m/s2');
+   $('.s2_cloud_4').event.acceleration.x + ' m/s2');
+   $('.s2_cloud_5').event.acceleration.x + ' m/s2');
+   $('.s2_cloud_6').event.acceleration.x + ' m/s2');
+   $('.s2_cloud_7').event.acceleration.x + ' m/s2');
+   $('.s2_cloud_8').event.acceleration.x + ' m/s2');
 });
- 
+
+    
+//   // Bind an event to window.orientationchange that, when the device is turned,
+//// gets the orientation and displays it to on screen.
+//$( window ).on( "orientationchange", function( event ) {
+//  $('.s2_cloud_1').toggleClass('transform0');
+//  $('.s2_cloud_2').toggleClass('transform1');
+//  $('.s2_cloud_3').toggleClass('transform0');
+//  $('.s2_cloud_4').toggleClass('transform1');
+//  $('.s2_cloud_5').toggleClass('transform0');
+//  $('.s2_cloud_6').toggleClass('transform1');
+//  $('.s2_cloud_7').toggleClass('transform0');
+//  $('.s2_cloud_8').toggleClass('transform0');
+//  
+//});
 
 
 });
