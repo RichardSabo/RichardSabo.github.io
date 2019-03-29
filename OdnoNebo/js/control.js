@@ -857,11 +857,21 @@ $(function() {
   ymap();
  
 });
+   
     
-    
-$('.s2_cloud_1').on('devicemotion', function(event) {
-  console.log(event.acceleration.x + ' m/s2');
-});
+if (window.DeviceOrientationEvent) {
+   $(window).on("deviceorientation", function () {
+        tilt([event.beta, event.gamma]);
+    }, true);
+} else if (window.DeviceMotionEvent) {
+    $('.s2_cloud_1').on('devicemotion', function () {
+        tilt([event.acceleration.x * 2, event.acceleration.y * 2]);
+    }, true);
+} else {
+    $('.s2_cloud_1').on("MozOrientation", function () {
+        tilt([orientation.x * 50, orientation.y * 50]);
+    }, true);
+}
     
 //   // Bind an event to window.orientationchange that, when the device is turned,
 //// gets the orientation and displays it to on screen.
