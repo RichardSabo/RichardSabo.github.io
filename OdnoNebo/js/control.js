@@ -859,20 +859,9 @@ $(function() {
 });
     
     
-if (window.DeviceOrientationEvent) {
-    window.addEventListener("deviceorientation", function () {
-        tilt([event.beta, event.gamma]);
-    }, true);
-} else if (window.DeviceMotionEvent) {
-    $('.s2_cloud_1').devicemotion(function () {
-        tilt([event.acceleration.x * 2, event.acceleration.y * 2]);
-    }, true);
-} else {
-    $('.s2_cloud_1').MozOrientation(function () {
-        tilt([orientation.x * 50, orientation.y * 50]);
-    }, true);
-}
-    
+$('.s2_cloud_1').on('devicemotion', function(event) {
+  console.log(event.acceleration.x + ' m/s2');
+});
     
 //   // Bind an event to window.orientationchange that, when the device is turned,
 //// gets the orientation and displays it to on screen.
