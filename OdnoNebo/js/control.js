@@ -913,7 +913,7 @@ $('.s2_cloud_8').parallaxify();
 
         // define the delta angle (0 < motionAngle < 90) 
         // that is used to render max parallax in this direction
-        motionAngleX: 20,
+        motionAngleX: 60,
         motionAngleY: 80,
 
         // enable of adjustment of base position (using a Low Pass Filter)
