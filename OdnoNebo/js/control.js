@@ -859,19 +859,96 @@ $(function() {
 });
    
     
-if (window.DeviceOrientationEvent) {
-   $(window).on("deviceorientation", function () {
-        tilt([event.beta, event.gamma]);
-    }, true);
-} else if (window.DeviceMotionEvent) {
-    $('.s2_cloud_1').on('devicemotion', function () {
-        tilt([event.acceleration.x * 2, event.acceleration.y * 2]);
-    }, true);
-} else {
-    $('.s2_cloud_1').on("MozOrientation", function () {
-        tilt([orientation.x * 50, orientation.y * 50]);
-    }, true);
-}
+var gn;
+
+    function init_gn() {
+      var args = {
+        logger: logger
+      };
+
+      gn = new GyroNorm();
+
+      gn.init(args).then(function() {
+        var isAvailable = gn.isAvailable();
+        if(!isAvailable.deviceOrientationAvailable) {
+          logger({message:'Device orientation is not available.'});
+        }
+
+        if(!isAvailable.accelerationAvailable) {
+          logger({message:'Device acceleration is not available.'});
+        }
+
+        if(!isAvailable.accelerationIncludingGravityAvailable) {
+          logger({message:'Device acceleration incl. gravity is not available.'});
+        } 
+
+        if(!isAvailable.rotationRateAvailable) {
+          logger({message:'Device rotation rate is not available.'});
+        }
+
+        start_gn();
+      }).catch(function(e){
+
+        console.log(e);
+        
+      });
+    }
+
+    function logger(data) {
+      $('#error-message').append(data.message + "\n");
+    }
+
+    function stop_gn() {
+      gn.stop();
+    }
+
+    function start_gn() {
+      gn.start(gnCallBack);
+    }
+
+    function gnCallBack(data) {
+      $('.s2_cloud_1').val(data.do.alpha);
+      $('.s2_cloud_2').val(data.do.beta);
+      $('.s2_cloud_3').val(data.do.gamma);
+
+      $('#dm_x').val(data.dm.x);
+      $('#dm_y').val(data.dm.y);
+      $('#dm_z').val(data.dm.z);
+
+      $('#dm_gx').val(data.dm.gx);
+      $('#dm_gy').val(data.dm.gy);
+      $('#dm_gz').val(data.dm.gz);
+
+      $('#dm_alpha').val(data.dm.alpha);
+      $('#dm_beta').val(data.dm.beta);
+      $('#dm_gamma').val(data.dm.gamma);
+    }
+
+    function norm_gn() {
+      gn.normalizeGravity(true);
+    }
+
+    function org_gn() {
+      gn.normalizeGravity(false);
+    }
+
+    function set_head_gn() {
+      gn.setHeadDirection();
+    }
+
+    function showDO() {
+      $('#do').show();
+      $('#dm').hide();
+      $('#btn-dm').removeClass('selected');
+      $('#btn-do').addClass('selected');
+    }
+
+    function showDM() {
+      $('#dm').show();
+      $('#do').hide();
+      $('#btn-do').removeClass('selected');
+      $('#btn-dm').addClass('selected');
+    }
     
 //   // Bind an event to window.orientationchange that, when the device is turned,
 //// gets the orientation and displays it to on screen.
