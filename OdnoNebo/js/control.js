@@ -859,16 +859,37 @@ $(function() {
 });
     
     
-     window.addEventListener('devicemotion', function(event) {
-   $('.s2_cloud_1').event.acceleration.x + ' m/s2';
-   $('.s2_cloud_2').event.acceleration.x + ' m/s2';
-   $('.s2_cloud_3').event.acceleration.x + ' m/s2';
-   $('.s2_cloud_4').event.acceleration.x + ' m/s2';
-   $('.s2_cloud_5').event.acceleration.x + ' m/s2';
-   $('.s2_cloud_6').event.acceleration.x + ' m/s2';
-   $('.s2_cloud_7').event.acceleration.x + ' m/s2';
-   $('.s2_cloud_7').event.acceleration.x + ' m/s2';
-});
+  var x = 0, y = 0,
+      vx = 0, vy = 0,
+      ax = 0, ay = 0;
+  
+  var cloud1 = $('.s2_cloud_1');
+    
+    if(window.DeviceMotionEvent != undefined){
+        window.ondevicemotion = function(e){
+            cloud1 = event.acceleration.x * 2;
+        }
+//        setInterval(function(){
+//            var landscapeOrientation = window.innerWidth/window.innerHeight > 1;
+//            if(landscapeOrientation){
+//                vx = vx + ay;
+//                vy = vy + ax;
+//            } else {
+//                vy = vy - ay;
+//                vx = vx + ax;
+//            }
+//            vx = vx * 0.98;
+//            vy = vy * 0.98;
+//            y = parseInt(y + vy / 50);
+//            x = parseInt(x + vx / 50);
+//            boundingBoxCheck();
+//            
+//            cloud1.style.left = x + "px";
+//            cloud1.style.top = y + "px";
+//            
+//        }, 25);
+    }
+    
 
     
 //   // Bind an event to window.orientationchange that, when the device is turned,
