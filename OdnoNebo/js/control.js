@@ -860,18 +860,16 @@ var ymap = function() {
 //    $('.s2_cloud_1').parallaxify({
 //        positionProperty: 'rotate'
 //    });
-  $.parallaxify.positionProperty.rotate = {
+
+$.parallaxify.positionProperty.mytransform= {
         setPosition: function($element, left, originalLeft, top, originalTop) {
-            $element.css('transform', 'rotateX(' + left + 'deg) rotateY(' + top + 'deg)');
-        }
-    };
+
+            $element.css('transform', 'translate(' + (originalLeft - left) + 'px, ' + (originalTop - top) + 'px)');
+       }
+   };
         
-    // using your own positioning function
-    $('#other').parallaxify({
-        positionProperty: 'rotate'
-    });
  $('#cloud1').parallaxify({
-        positionProperty: 'rotate'
+        positionProperty: 'mytransform'
     });
 $('#cloud2').parallaxify();
 $('.s2_cloud_3').parallaxify();
