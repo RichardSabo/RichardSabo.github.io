@@ -719,6 +719,7 @@ header {
 .s2_cloud_3 {
   position: absolute;
   top: 400px;
+     transition: 0.2s ease;
   left: -140px; }
 
 .s2_cloud_5,
@@ -5670,3 +5671,11 @@ footer {
 
 .s3_block_3 img {
   z-index: 40; }
+
+
+.transform1{
+    transform: translateX(30px);
+}
+.transform0{
+    transform: translateX(-30px);
+}
