@@ -1,13 +1,13 @@
 $( document ).ready(function() {
     
     $('.head_top_btn').click(function(){
-        $('nav').addClass('transf');
+        $('nav').addClass('active');
         $('.nav_close_mob').addClass('active');
         $('.section_4 .s4_overlay').addClass('active');
     });
     
     $('.nav_close_mob').click(function(){
-        $('nav').removeClass('transf');
+        $('nav').removeClass('active');
          $('.nav_close_mob').removeClass('active');
               $('.section_4 .s4_overlay').removeClass('active');
     })
@@ -136,7 +136,7 @@ $('.s4_title1 .s4_title_more').click(function(){
     $('.s4_title7 .s4_title_hidden').removeClass('active');
         $('.section_4 .s4_overlay').removeClass('active');
         $('.head_bottom li').removeClass('active');
-          $('nav').removeClass('transf');
+          $('nav').removeClass('active');
          $('.nav_close_mob').removeClass('active');
     });
     

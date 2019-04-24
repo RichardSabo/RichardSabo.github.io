@@ -1247,7 +1247,8 @@ footer {
             -ms-transform: translateX(-50%);
                 transform: translateX(-50%);
         left: 50%;
-        top: -48px; }
+        top: -48px;
+        width: 132px; }
     .section3 h2 {
       background: #fff;
       position: relative;
@@ -2033,12 +2034,9 @@ footer {
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
-      display: block;
+      display: none;
       background: #fff;
       position: fixed;
-      -webkit-transform: translateX(400px);
-          -ms-transform: translateX(400px);
-              transform: translateX(400px);
       height: 100vh;
       top: 0;
       right: 0;
@@ -2126,7 +2124,8 @@ footer {
             -ms-transform: translateX(-50%);
                 transform: translateX(-50%);
         left: 50%;
-        top: -48px; }
+        top: -30px;
+        width: 100px; }
     .section3 h2 {
       background: #fff;
       position: relative;
@@ -2690,8 +2689,8 @@ footer {
           -ms-transform: translateX(-50%);
               transform: translateX(-50%);
       left: 50%;
-      top: -41px;
-      width: 110px; }
+      top: -35px;
+      width: 100px; }
     .section_11 h2 {
       background: #fff;
       font-size: 25px;
@@ -2916,8 +2915,8 @@ footer {
           -ms-transform: translateX(-50%);
               transform: translateX(-50%);
       left: 50%;
-      top: -38px;
-      width: 110px; }
+      top: -35px;
+      width: 95px; }
     .section_14 .s14_line {
       display: none; }
     .section_14 .s14_line2 {
@@ -3025,3 +3024,19 @@ footer {
       font-family: "Mon Semibold";
       color: rgba(255, 255, 255, 0.902);
       line-height: 1.75; } }
+
+@media (min-width: 493px) and (max-width: 767px) {
+  .section3 .container2 .cog1 {
+    width: 82px;
+    top: -30px; } }
+
+@media (max-height: 500px) {
+  nav {
+    position: absolute !important;
+    top: -41px !important;
+    right: -12px !important; }
+  header .nav_close_mob {
+    z-index: 60;
+    position: absolute !important;
+    top: -20px !important;
+    right: 5px !important; } }
