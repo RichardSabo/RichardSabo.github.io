@@ -2166,28 +2166,29 @@ footer {
       position: relative; }
       .section3 .s3_row2 .s3_row2_img1 {
         position: absolute;
+        left: 0;
+        z-index: 1;
+        width: 140px;
+        height: 180px;
+        background: url("../img/page_main/p1_img3.jpg") no-repeat center center/cover; }
+      .section3 .s3_row2 .s3_row2_img2 {
+        position: absolute;
         left: 50%;
         -webkit-transform: translateX(-50%);
             -ms-transform: translateX(-50%);
                 transform: translateX(-50%);
         width: 280px;
         height: 180px;
-        background: url("../img/page_main/p1_img3.jpg") no-repeat center center/cover; }
-      .section3 .s3_row2 .s3_row2_img2 {
-        position: absolute;
-        right: 0;
-        width: 140px;
-        height: 180px;
         background: url("../img/page_main/p1_img4.jpg") no-repeat center center/auto; }
       .section3 .s3_row2 .s3_circle {
         width: 50px;
-        height: 50px; }
+        height: 50px;
+        position: absolute;
+        right: -50px; }
         .section3 .s3_row2 .s3_circle img {
           position: absolute;
-          top: 50%;
-          -webkit-transform: translate(-50%, -50%);
-              -ms-transform: translate(-50%, -50%);
-                  transform: translate(-50%, -50%);
+          left: -20px;
+          top: 65px;
           width: auto; }
       .section3 .s3_row2 .s3_circle_line {
         width: 1px;
@@ -2218,28 +2219,29 @@ footer {
       height: 210px; }
       .section3 .s3_row4 .s3_row4_img1 {
         position: absolute;
+        left: 0;
+        z-index: 1;
+        width: 140px;
+        height: 180px;
+        background: url("../img/page_main/p1_img5.jpg") no-repeat center center/cover; }
+      .section3 .s3_row4 .s3_row4_img2 {
+        position: absolute;
         left: 50%;
         -webkit-transform: translateX(-50%);
             -ms-transform: translateX(-50%);
                 transform: translateX(-50%);
         width: 280px;
         height: 180px;
-        background: url("../img/page_main/p1_img5.jpg") no-repeat center center/cover; }
-      .section3 .s3_row4 .s3_row4_img2 {
-        position: absolute;
-        right: 0;
-        width: 140px;
-        height: 180px;
         background: url("../img/page_main/p1_img6.jpg") no-repeat center center/auto; }
       .section3 .s3_row4 .s3_circle {
         width: 50px;
-        height: 50px; }
+        height: 50px;
+        position: absolute;
+        right: -50px; }
         .section3 .s3_row4 .s3_circle img {
           position: absolute;
-          top: 50%;
-          -webkit-transform: translate(-50%, -50%);
-              -ms-transform: translate(-50%, -50%);
-                  transform: translate(-50%, -50%);
+          left: -20px;
+          top: 65px;
           width: auto; }
       .section3 .s3_row4 .s3_circle_line {
         width: 1px;
@@ -2616,7 +2618,11 @@ footer {
     -webkit-box-direction: normal;
     -webkit-flex-flow: column;
         -ms-flex-flow: column;
-            flex-flow: column; }
+            flex-flow: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .section_9 h2 {
     font-size: 18px;
     font-family: "Mon Black";

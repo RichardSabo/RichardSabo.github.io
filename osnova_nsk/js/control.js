@@ -169,12 +169,12 @@ $('.s4_title1 .s4_title_more').click(function(){
     
     
     
-    $('.s3_row2_img2').resizable({
-         handles: 'w',
+    $('.s3_row2_img1').resizable({
+         handles: 'e',
          containment: 'parent'
     });
-     $('.s3_row4_img2').resizable({
-         handles: 'w',
+     $('.s3_row4_img1').resizable({
+         handles: 'e',
          containment: 'parent'
     });
      $('.s3_row6_img1').resizable({
