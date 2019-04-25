@@ -20,7 +20,7 @@ $('.s10_slider').slick({
   slidesToScroll: 1,
       responsive: [
       {
-         breakpoint: 1150,
+         breakpoint: 901,
     settings: {
       slidesToShow: 2,
       slidesToScroll: 1,
@@ -43,7 +43,7 @@ $('.s13_slider').slick({
   slidesToScroll: 1,
       responsive: [
       {
-         breakpoint: 1150,
+         breakpoint: 901,
     settings: {
       slidesToShow: 2,
       slidesToScroll: 1,
@@ -206,6 +206,12 @@ $('.s4_title1 .s4_title_more').click(function(){
     $('.s11_btn').click(function(){
         $('.s11_box').addClass('active');
         $(this).hide();
-    })
+        $('.s11_btn2').show();
+    });
+    $('.s11_btn2').click(function(){
+         $('.s11_box').removeClass('active');
+         $(this).hide();
+         $('.s11_btn').show();
+    });
     
 });
